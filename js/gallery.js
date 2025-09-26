@@ -100,10 +100,10 @@ function handlerClick(event) {
         return
     }
 
-    console.log(event.target.dataset.source);
+    const openImage = event.target.dataset.source;
 
     const instance = basicLightbox.create(`
-    <img src="${image.original}">
+    <img src="${openImage}">
 `)
 
     instance.show();
